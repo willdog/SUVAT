@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SUVAT Calculator</title>
+    <style>
+        .box {
+            margin-top: 50px;
+            margin-bottom: -25px;
+            text-align: center;
+            width: 500px;
+            color: #333;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            position: relative;
+            box-shadow: 0px 0px 0px #D2D2D2;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha256-IdfIcUlaMBNtk4Hjt0Y6WMMZyMU0P9PN/pH+DFzKxbI=" crossorigin="anonymous"/>
+</head>
+<body style="background-color: #D2D2D2">
+<div class="container">
+    <div id="box" class="box">
+        <h1>SUVAT Calculator</h1>
+        <hr>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Displacement</span>
+            </div>
+            <input id="s" type="number" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text">m</span>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Initial velocity</span>
+            </div>
+            <input id="u" type="number" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text">ms<sup>-1</sup></span>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Final velocity</span>
+            </div>
+            <input id="v" type="number" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text">ms<sup>-1</sup></span>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Acceleration</span>
+            </div>
+            <input id="a" type="number" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text">ms<sup>-2</sup></span>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Time</span>
+            </div>
+            <input id="t" type="number" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text">s</span>
+            </div>
+        </div>
+        <div>
+            <button id="submit" type="button" class="btn btn-primary">Calculate</button>
+            <button id="reset" type="button" class="btn btn-danger">Reset</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="calculate.js"></script>
+</html>
